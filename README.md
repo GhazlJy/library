@@ -52,7 +52,7 @@ Navigate to the project folder:
 
 
 
-cd your-repo-name
+cd my-library
 Install the dependencies:
 
 
@@ -64,9 +64,6 @@ To start the application in development mode, run:
 
 
 The app will be available at:
-
-
-
 http://localhost:3000
 ---
 
