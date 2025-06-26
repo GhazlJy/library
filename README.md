@@ -1,77 +1,97 @@
-مشروع مكتبة الكتب - React
-نظرة عامة
-هذا المشروع عبارة عن تطبيق ويب صغير باستخدام React يعرض قائمة كتب من API خارجي (Open Library)، ويمكن للمستخدم الضغط على أي كتاب لعرض تفاصيله الكاملة.
+# React Library Application
 
-التقنيات المستخدمة
-React (وظائف Functional Components + Hooks)
+A simple React application that displays a list of books using the Open Library API. The app consists of two main screens:
 
-React Router Dom (للتنقل بين الصفحات)
+- **List Screen**: Displays a collection of books with title, author, and cover image.
+- **Details Screen**: Shows detailed information about a selected book, including description, page count, authors, and cover image.
 
-Context API (لإدارة البيانات بين المكونات)
+---
 
-Fetch API (لجلب البيانات من API خارجي)
+## Technologies Used
 
-CSS مخصص للتصميم البسيط
+- React with Hooks (`useState`, `useEffect`, `useContext`)
+- React Router for client-side routing
+- Fetch API for data retrieval from Open Library API
+- CSS for styling and layout
 
-بنية المشروع
+---
+
+## Project Structur
+
 /src
-
 /components
-
-List.jsx - شاشة عرض قائمة الكتب
-
-Details.jsx - شاشة عرض تفاصيل الكتاب
-
+- List.jsx # Books list screen
+- Details.jsx # Book details screen
 /context
-
-AppContext.jsx - مزود البيانات (Context Provider) وجلب البيانات من API
-
+- AppContext.jsx # Application state and data fetching logic
 /css
+- List.css # Styles for the list screen
+- Details.css # Styles for the details screen
+index.jsx # Application entry point
 
-ملفات CSS للتنسيق
 
-index.jsx - نقطة الدخول وتحديد Routes
+---
 
-خطوات التشغيل
-تأكد أنك مثبت Node.js و npm على جهازك.
+## Getting Started
 
-استنسخ المشروع:
+### Prerequisites
 
-bash
-نسخ
-تحرير
-git clone https://github.com/username/repo-name.git
-ادخل مجلد المشروع:
+- Node.js and npm installed on your machine
 
-bash
-نسخ
-تحرير
-cd repo-name
-ثبت الحزم المطلوبة:
+### Installation
 
-bash
-نسخ
-تحرير
+1. Clone the repository:
+
+git clone <repository-url>
+
+css
+
+
+2. Navigate to the project directory and install dependencies:
+
 npm install
-شغل التطبيق محليًا:
 
-bash
-نسخ
-تحرير
+markdown
+
+
+3. Start the development server:
+
 npm start
-كيفية استخدام التطبيق
-الصفحة الرئيسية تعرض قائمة من الكتب مع صورة الغلاف والعنوان والمؤلف.
 
-اضغط على أي كتاب للدخول لصفحة التفاصيل التي تعرض معلومات أوسع مثل الوصف وعدد الصفحات.
+yaml
 
-يمكنك الرجوع للصفحة السابقة باستخدام زر "العودة".
 
-ملاحظات
-البيانات تُجلب من Open Library API
+4. Open your browser and visit `http://localhost:3000`
 
-التطبيق يتعامل مع حالات التحميل والأخطاء بشكل مبسط
+---
 
-يمكن تطوير الواجهة وإضافة ميزات أكثر مثل البحث أو تصفية الكتب
+## Features
 
-مكتبات خارجية
-react-router-dom للتنقل بين الصفحات
+- Clear separation of UI and business logic using React Context API
+- Graceful handling of loading states and error scenarios during data fetching
+- Seamless navigation between list and detail views using React Router
+- Responsive and user-friendly interface design
+
+---
+
+## Contribution Guidelines
+
+- Fork the repository and create a new branch for your feature or bug fix:  
+`git checkout -b feature/your-feature`
+
+- Make your changes with clear and concise commit messages
+- Test your changes thoroughly
+- Submit a pull request with a detailed description of your changes
+
+---
+
+
+## API Endpoints
+
+- Fetch list of books:  
+`https://openlibrary.org/subjects/love.json?limit=10`
+
+- Fetch book details:  
+`https://openlibrary.org/works/{work_key}.json`
+
+
