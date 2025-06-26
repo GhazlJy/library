@@ -37,12 +37,6 @@ library/
 
 
 
-![لقطة الشاشة 2025-06-26 035259](https://github.com/user-attachments/assets/88d7e616-e73d-46ef-b2d3-c34072f27645)
-![لقطة الشاشة 2025-06-26 035259](https://github.com/user-attachments/assets/88d7e616-e73d-46ef-b2d3-c34072f27645)
-
-
-
-
 
 ---
 
@@ -107,5 +101,15 @@ http://localhost:3000
 
 - Fetch book details:  
 `https://openlibrary.org/works/{work_key}.json`
+
+---
+
+
+## Project photos
+
+![home](https://github.com/user-attachments/assets/3344c9ed-4f48-4d88-be33-4c7941295a92)
+
+
+![more](https://github.com/user-attachments/assets/0698e816-dd6f-4de9-a1e3-35edfcd5c2ff)
 
 
