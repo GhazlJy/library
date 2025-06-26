@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+مشروع مكتبة الكتب - React
+نظرة عامة
+هذا المشروع عبارة عن تطبيق ويب صغير باستخدام React يعرض قائمة كتب من API خارجي (Open Library)، ويمكن للمستخدم الضغط على أي كتاب لعرض تفاصيله الكاملة.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+التقنيات المستخدمة
+React (وظائف Functional Components + Hooks)
 
-## Available Scripts
+React Router Dom (للتنقل بين الصفحات)
 
-In the project directory, you can run:
+Context API (لإدارة البيانات بين المكونات)
 
-### `npm start`
+Fetch API (لجلب البيانات من API خارجي)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+CSS مخصص للتصميم البسيط
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+بنية المشروع
+/src
 
-### `npm test`
+/components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+List.jsx - شاشة عرض قائمة الكتب
 
-### `npm run build`
+Details.jsx - شاشة عرض تفاصيل الكتاب
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/context
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+AppContext.jsx - مزود البيانات (Context Provider) وجلب البيانات من API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+/css
 
-### `npm run eject`
+ملفات CSS للتنسيق
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+index.jsx - نقطة الدخول وتحديد Routes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+خطوات التشغيل
+تأكد أنك مثبت Node.js و npm على جهازك.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+استنسخ المشروع:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+نسخ
+تحرير
+git clone https://github.com/username/repo-name.git
+ادخل مجلد المشروع:
 
-## Learn More
+bash
+نسخ
+تحرير
+cd repo-name
+ثبت الحزم المطلوبة:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+نسخ
+تحرير
+npm install
+شغل التطبيق محليًا:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+نسخ
+تحرير
+npm start
+كيفية استخدام التطبيق
+الصفحة الرئيسية تعرض قائمة من الكتب مع صورة الغلاف والعنوان والمؤلف.
 
-### Code Splitting
+اضغط على أي كتاب للدخول لصفحة التفاصيل التي تعرض معلومات أوسع مثل الوصف وعدد الصفحات.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+يمكنك الرجوع للصفحة السابقة باستخدام زر "العودة".
 
-### Analyzing the Bundle Size
+ملاحظات
+البيانات تُجلب من Open Library API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+التطبيق يتعامل مع حالات التحميل والأخطاء بشكل مبسط
 
-### Making a Progressive Web App
+يمكن تطوير الواجهة وإضافة ميزات أكثر مثل البحث أو تصفية الكتب
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+مكتبات خارجية
+react-router-dom للتنقل بين الصفحات
